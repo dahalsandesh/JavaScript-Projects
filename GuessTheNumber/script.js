@@ -18,6 +18,7 @@ if(playGame){
     e.preventDefault();
     const guess = parseInt(userInput.value);
     validateGuess(guess);
+   
  })
 }
 
@@ -25,31 +26,36 @@ function validateGuess(guess){
   if( isNaN(guess)){
     alert('Please enter a valid number');
   } else if(guess < 1){
-    alert('Please enter a number more tha 1');
+    alert('Please enter a number more than 1');
   } else if(guess > 100){
-    alert('Please enter number less tha 100');
+    alert('Please enter number less than 100');
   }
   else{
     prevGuess.push(guess)
-    if(numGuess === 11){
+    if(numGuess === 9){
         displayGuess(guess)
-        displayMessage(`Game Over.. Random Number was ${randomNumber}`)
+        displayMessage(`Game Over..😈 </br> Random Number was ${randomNumber}`)
         endGame()
     }else{
         displayGuess(guess)
-        check(guess)
+        checkGuess(guess)
     }
   }
+}
+function displayMessage(message) {
+  lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
 
 function checkGuess(guess) {
     if (guess === randomNumber) {
-      displayMessage(`You guessed it right`);
+      displayMessage(`<h1>  WOW SO BEAUTIFUL 😯 !! </h1> You guessed it right`);
       endGame();
-    } else if (guess < randomNumber) {
-      displayMessage(`Number is Low`);
-    } else if (guess > randomNumber) {
-      displayMessage(`Number is High`);
+    } 
+    else if(guess < randomNumber) {
+      displayMessage(`Number is Low 🤏`);
+    }
+    else if (guess > randomNumber) {
+      displayMessage(`Number is High 🧐`);
     }
   }
   numGuess = 0;
@@ -60,9 +66,7 @@ function checkGuess(guess) {
     remaining.innerHTML = `${10 - numGuess} `;
   }
   
-  function displayMessage(message) {
-    lowOrHi.innerHTML = `<h2>${message}</h2>`;
-  }
+  
   
   function endGame() {
     userInput.value = '';
@@ -79,9 +83,9 @@ function checkGuess(guess) {
     newGameButton.addEventListener('click', function (e) {
       randomNumber = parseInt(Math.random() * 100 + 1);
       prevGuess = [];
-      numGuess = 1;
+      numGuess = 0;
       guessSlot.innerHTML = '';
-      remaining.innerHTML = `${11 - numGuess} `;
+      remaining.innerHTML = `${10 - numGuess} `;
       userInput.removeAttribute('disabled');
       startOver.removeChild(p);
   

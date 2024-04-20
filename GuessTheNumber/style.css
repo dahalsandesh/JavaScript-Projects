@@ -9,7 +9,7 @@ html {
    */
   .lastResult {
     color: white;
-    padding: 7px;
+    padding: 8px;
   }
   
   .guesses {
@@ -40,7 +40,7 @@ html {
     box-shadow: #0c5629 3px 3px;
     font-size: 24px;
     border-style: none;
-    margin-top: 50px;
+    margin-top: 40px;
     /* margin-left: 75px; */
   }
   
@@ -58,7 +58,7 @@ html {
   }
   
   #guess {
-    font-size: 40px;
+    font-size: 35px;
     /* margin-left: 90px; */
     margin-top: 120px;
     color: #fff;
@@ -73,13 +73,13 @@ html {
     flex-wrap: wrap;
     margin: 5rem auto;
     width: 50%;
-    border: 3px solid rgb(10, 77, 10);
+    border: 3px solid #0a4d0a;
     padding: 10px;
     justify-content: center;
     box-sizing: border-box;
     text-align: center;
     width: 450px;
-    height: 600px;
+    height: 650px;
     background-color: #474747;
     color: #fff;
     font-size: 25px;
