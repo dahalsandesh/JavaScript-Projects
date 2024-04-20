@@ -1,0 +1,24 @@
+body {
+    background-color: #212121;
+    color: #fff;
+  }
+  .center {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #clock {
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: #fff 1px 1px;
+    background-color: orange;
+    padding: 30px 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  #text{
+    font-size: 40px;
+    text-shadow: #fff 1px 1px;
+  }
