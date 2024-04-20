@@ -71,7 +71,7 @@ html {
   #wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 5rem auto;
+    margin: 2rem auto;
     width: 50%;
     border: 3px solid #0a4d0a;
     padding: 10px;
