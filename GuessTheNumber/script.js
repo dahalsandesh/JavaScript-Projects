@@ -48,7 +48,7 @@ function displayMessage(message) {
 
 function checkGuess(guess) {
     if (guess === randomNumber) {
-      displayMessage(`<h1>  WOW SO BEAUTIFUL 😯 !! </h1> You guessed it right`);
+      displayMessage(`<h1>  WOW SO BEAUTIFUL 😯 !! </h1> You guessed it right🎉`);
       endGame();
     } 
     else if(guess < randomNumber) {
